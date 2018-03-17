@@ -26,8 +26,7 @@ public class SpawnFood : MonoBehaviour {
 		isSpecialOnBoard = false;
 	}
 
-	//jezeli spawn = true, czyli nie ma jedzenia normalnego na planszy, dodaj je
-	//jezeli na planszy nie ma specjalnego jedzenia i minął odpowiedni odstęp czasu, dodaj je
+	
 	void Update()
 	{
 		if (spawn) 
@@ -44,7 +43,7 @@ public class SpawnFood : MonoBehaviour {
 			  
 	}
 
-	//funkcja tworzy nowe jedzenie w miejscu o wcześniej wylosowanych współrzędnych 
+	
 	 void Spawn()
 	{
 		float x = Random.Range (minWidth, maxWith); 
@@ -55,7 +54,7 @@ public class SpawnFood : MonoBehaviour {
 		newFood.transform.parent = transform; 
 	}
 
-	//funkcja tworzy nowe specjalne jedzenie w miejscu o wcześniej wylosowanych współrzędnych
+	
 	void SpecialSpawn()
 	{
 		float x = Random.Range (minWidth, maxWith); 
