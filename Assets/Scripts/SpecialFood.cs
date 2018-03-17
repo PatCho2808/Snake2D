@@ -21,8 +21,6 @@ public class SpecialFood: MonoBehaviour {
 		dead = Time.time + lifeTime; 
 	}
 
-	//jeżeli upłynął odpowiedni czas, funkcja niszczy to jedzenie i losuje czas do następnego utworzenia specjalnego jedzenia
-	//pare sekund przed koncem istnienia obiektu zaczyna mrugać
 	void Update()
 	{
 		if (Time.time > dead) 
